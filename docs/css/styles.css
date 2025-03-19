@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* Combina un color de fondo clarito con el patrón repetido */
+    background: #FAF0E6 url("img/fondo-patron.png") repeat;
+    font-family: Calibri, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem; /* Cambia el valor para ajustar el tamaño */
+    margin: 20px 0;  /* Añade separación vertical si lo deseas */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 35px; /* Bordes redondeados (ajusta el valor según lo que prefieras) */
+    max-width: 400px; /* Se asegura de que no exceda el tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+}
+
+#descripcion-grupo {
+    background-color: #FFFFFF;  /* Fondo blanco */
+    border-radius: 8px;         /* Bordes redondeados */
+    padding: 20px;             /* Espaciado interno */
+    margin: 20px auto;         /* Espacio con el resto de elementos */
+    max-width: 800px;          /* Ancho máximo para que no ocupe toda la pantalla */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar relieve */
+}
+
+#descripcion-grupo h2 {
+    font-family: Verdana, sans-serif; /* Cambia a Verdana para diferenciarlo del texto normal */
+    color: #333;
+    margin-top: 0;   /* Para que no haya espacio excesivo arriba del título */
+}
+
+#descripcion-grupo p {
+    text-align: justify;   /* Justifica el texto */
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Estilos para la sección */
+#fechas-conciertos {
+    max-width: 800px;        /* Ancho máximo de la sección */
+    margin: 20px auto;       /* Centra la sección horizontalmente */
+    padding: 10px;
+    font-family: Calibri, sans-serif;
+}
+
+#fechas-conciertos h2 {
+    text-align: center;      /* Centra el título */
+    font-family: Verdana, sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la tabla */
+#tabla-conciertos {
+    width: 100%;
+    border-collapse: collapse; /* Quita el espacio entre celdas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor */
+}
+
+/* Encabezado de la tabla */
+#tabla-conciertos thead {
+    background-color: #f0f0f0; /* Color de fondo para la fila de encabezado */
+}
+
+#tabla-conciertos th {
+    padding: 12px 8px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Celdas del cuerpo de la tabla */
+#tabla-conciertos td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Fila impar (odd) */
+#tabla-conciertos tbody tr:nth-child(odd) {
+    background-color: #E6E6FA; /* Color claro */
+}
+
+/* Fila par (even) */
+#tabla-conciertos tbody tr:nth-child(even) {
+    background-color: #D8BFD8; /* Blanco */
+}
+
+/* Opcional: Hover sobre filas */
+#tabla-conciertos tbody tr:hover {
+    background-color: #e8f0fe; /* Color suave al pasar el ratón */
+}
+
+#btnConfirmar {
+    background-color: #67affc; /* Azul */
+    color: #FFFFFF;            /* Texto blanco */
+    border: none;             /* Sin borde por defecto */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;          /* Cambia el cursor al pasar */
+    border-radius: 4px;       /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+/* Hover: color ligeramente más oscuro */
+#btnConfirmar:hover {
+    background-color: #2f91fa; /* Un azul más oscuro */
+}
+
+/* Sección de confirmación */
+#confirmacion {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#resumen-compra {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resumen-compra h2 {
+    font-family: Verdana, sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#resumen-compra p {
+    font-family: Calibri, sans-serif;
+    line-height: 1.5;
+    color: #555;
+    margin: 5px 0;
+}
+
+#resumen-compra span {
+    color: #000; /* Un poco más oscuro para resaltar los datos */
+}
+
+#indicaciones {
+    font-family: Calibri, sans-serif;
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+}
+
+#indicaciones p {
+    margin: 10px 0;
+}
+
+/* Botón para volver (opcional) */
+.btn-volver {
+    display: inline-block;
+    background-color: #67affc; /* Azul */
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-volver:hover {
+    background-color: #2f91fa; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Contenedor del formulario */
+#formCompra {
+    max-width: 600px;            /* Ancho máximo del formulario */
+    margin: 30px auto;           /* Centra horizontalmente */
+    background-color: #FFFFFF;   /* Fondo blanco */
+    border-radius: 8px;          /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+    padding: 20px;               /* Espaciado interno */
+    font-family: Calibri, sans-serif; /* Fuente principal */
+}
+
+#formCompra h2 {
+    font-family: Verdana, sans-serif; /* Destaca el título con otra fuente */
+    color: #333;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas y campos */
+#formCompra label {
+    display: block;          /* Cada label en su propia línea */
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+#formCompra input[type="text"],
+#formCompra input[type="email"],
+#formCompra input[type="number"],
+#formCompra select {
+    width: 100%;             /* Ocupar todo el ancho disponible */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;  /* Borde gris claro */
+    border-radius: 4px;      /* Bordes redondeados */
+    box-sizing: border-box;  /* Contar padding en el ancho total */
+    font-family: Calibri, sans-serif;
+}
+
+/* Fieldset para agrupar radio buttons */
+#formCompra fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#formCompra legend {
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 8px;
+}
+
+/* Radio y checkbox en línea */
+#formCompra input[type="radio"],
+#formCompra input[type="checkbox"] {
+    margin-right: 5px; /* Espacio entre el botón y el texto */
+}
+
+#formCompra label.terminos-label {
+    font-weight: normal; /* Ajusta el estilo del label de Términos y Condiciones */
+    margin-top: 10px;
+}
+
+/* Botón de compra (puedes reutilizar #btnConfirmar si ya lo tienes) */
+#btnConfirmar {
+    background-color: #67affc; /* Azul */
+    color: #FFFFFF;            /* Texto blanco */
+    border: none;              /* Sin borde */
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;            /* Centra el botón */
+}
+
+/* Hover: color ligeramente más oscuro */
+#btnConfirmar:hover {
+    background-color: #2f91fa;
+}

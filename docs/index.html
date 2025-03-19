@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>North by Northwest</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlazamos el CSS -->
+</head>
+<body>
+    <header>
+        <h1>North by Northwest</h1>
+    </header>
+
+    <main>
+        <section>
+            <img src="img/grupo.jpg" alt="Imagen del grupo musical">
+
+        </section>
+
+        <section id="descripcion-grupo">
+            <h2>
+                Orígenes
+            </h2>
+           <p>
+                Este grupo de música está compuesto por tres mujeres talentosas que, a través de su sonido jazz blues, han creado una propuesta única cargada de empoderamiento
+                y reflexión. Su estilo evoca las emociones intensas de la película Con la muerte en los talones, donde la identidad y el rechazo a los roles predefinidos por la
+                sociedad juegan un papel crucial. Al igual que el protagonista, que se enfrenta a una identidad impuesta y lucha por no ser definido por otros, su música desafía
+                las convenciones tradicionales y se niega a ser encasillada.
+           </p>
+            <p>
+                Sus melodías sofisticadas, mezcladas con improvisaciones que recuerdan el espíritu del jazz, junto con las emociones profundas del blues, buscan abrir un espacio para
+                cuestionar las normas sociales y explorar la libertad personal. Con letras cargadas de feminismo, cada acorde y cada verso se convierten en un acto de resistencia,
+                desafiando la idea de que las mujeres deben encajar en estereotipos o ser vistas de una manera específica.
+            </p>
+            <p>
+                Este trío se inspira en la idea de romper las cadenas de las expectativas externas, abrazando su identidad única mientras luchan por definir su propio destino, tal 
+                como el protagonista de la película lucha por encontrar su verdad en un mundo que intenta dictársela. Con cada actuación, invitan a su audiencia a reflexionar sobre
+                la naturaleza de la identidad y a liberarse de las etiquetas que la sociedad trata de imponer.
+            </p>
+
+        </section>
+
+        <!-- Sección para la tabla de conciertos -->
+<section id="fechas-conciertos">
+    <h2>Fechas de Concierto</h2>
+    <table id="tabla-conciertos">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Lugar</th>
+                <th>Hora</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>19 de Julio de 2025</td>
+                <td> Wesleyan Chapel, Seneca Falls</td>
+                <td>18:48</td>
+                <td>35€</td>
+            </tr>
+            <tr>
+                <td>1 de Octubre de 2025</td>
+                <td>Lyceum Club Femenino, Madrid</td>
+                <td>19:31</td>
+                <td>30€</td>
+            </tr>
+            <tr>
+                <td>13 de Julio de 2026</td>
+                <td>Casa Azul, Coyoacán</td>
+                <td>19:54</td>
+                <td>15€</td>
+            </tr>
+            <tr>
+                <td>24 de Octubre de 2026</td>
+                <td>Plaza Austurvöllur, Albingi</td>
+                <td>19:12</td>
+                <td>25€</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<form id="formCompra">
+    <h2>Compra tus Entradas</h2>
+
+    <!-- Nombre -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <!-- Correo -->
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <!-- Selección de fecha y lugar -->
+    <label for="concierto">Elige el concierto (Fecha y Lugar):</label>
+    <select id="concierto" name="concierto" required>
+        <option value="">-- Seleccionar --</option>
+        <option value="19_julio_seneca">19 de Julio de 2025 - Wesleyan Chapel, Seneca Falls</option>
+        <option value="1_octubre_madrid">1 de Octubre de 2025 - Lyceum Club Femenino, Madrid</option>
+        <option value="13_julio_coyoacan">13 de Julio de 2026 - Casa Azul, Coyoacán</option>
+        <option value="24_octubre_albingi">24 de Octubre de 2026 - Plaza Austurvöllur, Albingi</option>
+    </select>
+
+    <!-- Cantidad de Entradas -->
+    <label for="cantidad">Cantidad de Entradas:</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+    <!-- Categoría (radio buttons) -->
+    <fieldset>
+        <legend>Selecciona la Categoría:</legend>
+        <label>
+            <input type="radio" name="categoria" value="General" required>
+            General
+        </label>
+        <label>
+            <input type="radio" name="categoria" value="VIP">
+            VIP
+        </label>
+    </fieldset>
+
+    <!-- Método de Pago (radio buttons) -->
+    <fieldset>
+        <legend>Selecciona el Método de Pago:</legend>
+        <label>
+            <input type="radio" name="pago" value="tarjeta" required>
+            Tarjeta de Crédito/Débito
+        </label>
+        <label>
+            <input type="radio" name="pago" value="paypal">
+            PayPal
+        </label>
+        <label>
+            <input type="radio" name="pago" value="transferencia">
+            Transferencia Bancaria
+        </label>
+    </fieldset>
+
+    <!-- Checkbox de Términos y Condiciones -->
+    <label for="terminos">
+        <input type="checkbox" id="terminos" name="terminos" required>
+        Acepto los Términos y Condiciones
+    </label>
+
+    <!-- Botón de compra -->
+    <button type="submit" id="btnConfirmar">Comprar</button>
+
+</form>
+    <script src="js/script.js"></script>
+</body>
+</html>

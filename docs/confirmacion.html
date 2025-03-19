@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmación de Compra</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>North by Northwest</h1>
+    </header>
+
+    <main id="confirmacion">
+        <section id="resumen-compra">
+            <h2>¡Gracias por tu Compra!</h2>
+            <p><strong>Nombre:</strong> <span id="conf-nombre"></span></p>
+            <p><strong>Correo:</strong> <span id="conf-correo"></span></p>
+            <p><strong>Concierto:</strong> <span id="conf-concierto"></span></p>
+            <p><strong>Cantidad:</strong> <span id="conf-cantidad"></span></p>
+            <p><strong>Categoría:</strong> <span id="conf-categoria"></span></p>
+            <p><strong>Método de Pago:</strong> <span id="conf-pago"></span></p>
+        </section>
+
+        <section id="indicaciones">
+            <p>
+                Te hemos enviado un correo de confirmación a 
+                <span id="conf-correo-again"></span> con todos los detalles de tu compra.
+            </p>
+            <p>
+                ¡Disfruta del concierto y gracias por confiar en 
+                <em>North by Northwest</em>!
+            </p>
+            <!-- Un botón para volver a la página principal, si lo deseas -->
+            <a href="index.html" class="btn-volver">Volver a la Página Principal</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Compra de Entradas</p>
+    </footer>
+
+    <script>
+        // Recuperar los datos de sessionStorage y mostrarlos
+        document.addEventListener("DOMContentLoaded", function() {
+            const nombre = sessionStorage.getItem("nombre");
+            const correo = sessionStorage.getItem("correo");
+            const concierto = sessionStorage.getItem("concierto");
+            const cantidad = sessionStorage.getItem("cantidad");
+            const categoria = sessionStorage.getItem("categoria");
+            const pago = sessionStorage.getItem("pago");
+
+            document.getElementById("conf-nombre").textContent = nombre;
+            document.getElementById("conf-correo").textContent = correo;
+            document.getElementById("conf-concierto").textContent = concierto;
+            document.getElementById("conf-cantidad").textContent = cantidad;
+            document.getElementById("conf-categoria").textContent = categoria;
+            document.getElementById("conf-pago").textContent = pago;
+
+            // Muestra el correo también en el segundo texto
+            document.getElementById("conf-correo-again").textContent = correo;
+        });
+    </script>
+</body>
+</html>
